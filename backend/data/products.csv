@@ -1,0 +1,7 @@
+product_id,product_name,category,unit_price,status
+PROD-01,Enterprise Decision Engine Core,Core Platform,65000,ACTIVE
+PROD-02,Automated Evidence Verifier,Add-on,24000,ACTIVE
+PROD-03,High-Throughput Streaming Connector,Integration,18000,ACTIVE
+PROD-04,Executive Audit Ledger Suite,Governance,32000,ACTIVE
+PROD-05,Dedicated Customer Success Architect,Professional Services,45000,ACTIVE
+PROD-06,Legacy On-Prem Bridge,Legacy,15000,DEPRECATED

@@ -1,0 +1,30 @@
+customer_id,company_name,tier,annual_contract_value,contract_start_date,renewal_date,status,industry,region
+CUST-1001,Acme Industries,Enterprise,210000,2024-01-15,2026-11-15,ACTIVE,Manufacturing,North America
+CUST-1002,Apex Retail Group,Enterprise,185000,2024-03-01,2026-12-01,ACTIVE,E-Commerce,North America
+CUST-1003,Vanguard Financial,Mid-Market,95000,2024-06-10,2026-10-30,ACTIVE,Fintech,Europe
+CUST-1004,OmniTech Solutions,Enterprise,160000,2023-11-01,2026-11-20,ACTIVE,SaaS,North America
+CUST-1005,Helios Health Systems,Enterprise,240000,2023-09-15,2027-01-15,ACTIVE,Healthcare,North America
+CUST-1006,Kestrel Logistics,Mid-Market,82000,2025-01-10,2026-11-05,ACTIVE,Supply Chain,Europe
+CUST-1007,Beacon Media Labs,Mid-Market,74000,2024-08-01,2026-10-15,ACTIVE,Digital Media,North America
+CUST-1008,Cobalt Cyber Defense,Enterprise,195000,2024-02-20,2027-02-20,ACTIVE,Cybersecurity,North America
+CUST-1009,Starlight Aerospace,Enterprise,280000,2023-05-12,2026-12-15,ACTIVE,Aerospace,North America
+CUST-1010,BlueWave Logistics,Enterprise,175000,2024-04-10,2027-04-10,ACTIVE,Maritime,Europe
+CUST-1011,Titan Energy Corp,Enterprise,220000,2023-10-01,2027-03-01,ACTIVE,Clean Energy,North America
+CUST-1012,Pulse Therapeutics,Mid-Market,88000,2025-02-01,2027-02-01,ACTIVE,Biotech,North America
+CUST-1013,Zenith Global Trading,Enterprise,150000,2024-05-15,2026-11-30,ACTIVE,Commodities,Asia-Pacific
+CUST-1014,Orion Cloud Services,Mid-Market,68000,2025-03-10,2027-03-10,ACTIVE,Cloud Infra,Europe
+CUST-1015,Strata Real Estate,Mid-Market,52000,2024-11-01,2026-11-01,ACTIVE,Proptech,North America
+CUST-1016,Crestview Automotive,Enterprise,190000,2024-01-20,2027-01-20,ACTIVE,Automotive,Europe
+CUST-1017,Quantum Robotics,Enterprise,215000,2024-07-01,2027-07-01,ACTIVE,Robotics,North America
+CUST-1018,Hyperion Agritech,SMB,36000,2025-04-01,2026-10-20,ACTIVE,Agriculture,South America
+CUST-1019,Aura Communications,Mid-Market,84000,2024-09-01,2026-12-10,ACTIVE,Telecom,North America
+CUST-1020,Echo Retailers,SMB,29000,2025-01-15,2027-01-15,ACTIVE,Apparel,Europe
+CUST-1021,Frontier Genomics,Enterprise,260000,2023-12-01,2026-12-01,ACTIVE,Life Sciences,North America
+CUST-1022,Summit Peak Insurance,Enterprise,145000,2024-06-01,2027-06-01,ACTIVE,Insurtech,North America
+CUST-1023,Polaris Fleet Management,Mid-Market,92000,2024-10-15,2026-10-25,ACTIVE,Fleet Ops,North America
+CUST-1024,Velocity Digital,SMB,31000,2025-05-01,2026-11-10,ACTIVE,Adtech,Europe
+CUST-1025,Atlas Heavy Machinery,Enterprise,170000,2024-02-01,2027-02-01,ACTIVE,Industrial,North America
+CUST-1033,AeroSys Dynamics,Mid-Market,62000,2023-04-01,2026-10-01,ACTIVE,Aviation,North America
+CUST-1042,Solaria Networks,Enterprise,125000,2024-01-10,2026-11-01,ACTIVE,Telecommunications,North America
+CUST-1042,Solaria Networks,Enterprise,75000,2024-01-10,2026-06-01,SUSPENDED,Telecommunications,North America
+CUST-1099,Veritas Cloud Labs,SMB,24000,2025-08-01,2026-12-31,ACTIVE,Research,Europe

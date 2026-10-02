@@ -1,0 +1,12 @@
+activity_id,customer_id,activity_type,activity_date,logged_by,notes,outcome
+ACT-7001,CUST-1001,Executive Touchpoint,2026-07-15,VP Customer Success,Q2 check-in. Client CTO expressed dissatisfaction with reliability.,Follow-up Needed
+ACT-7002,CUST-1001,Support Escalation,2026-09-14,Support Lead,Outage incident review. Client threatened SLA penalty clause.,Escalated
+ACT-7010,CUST-1002,Account Review,2026-07-28,Enterprise AE,Discussed renewal pipeline. Client VP mentioned evaluating competitor.,Risk Identified
+ACT-7011,CUST-1002,Check-in Call,2026-08-10,CS Manager,Meeting cancelled by client last minute. No reschedule date.,Cancelled
+ACT-7020,CUST-1003,Technical Review,2026-08-25,Solutions Architect,Compliance requirements discussion. Client waiting on export fix.,Pending Fix
+ACT-7030,CUST-1004,QBR,2026-07-02,Enterprise AE,Executive sponsor departed company. New leadership reviewing vendor spend.,Unfavorable
+ACT-7040,CUST-1010,Executive QBR,2026-09-20,VP Customer Success,Excellent expansion review. Client requested proposal for 2 new regions.,Expansion Proposed
+ACT-7041,CUST-1011,Annual Review,2026-09-18,Enterprise AE,Signed multi-year extension intent. Very happy with uptime.,Committed
+ACT-7050,CUST-1005,Check-in Call,2026-09-15,CS Manager,Routine medical device data ingest review. All running smoothly.,Completed
+ACT-7051,CUST-1008,Security Review,2026-09-22,Security Specialist,SOC2 compliance audit documentation delivered.,Completed
+ACT-7099,CUST-1042,Contract Cancellation Notice,2026-08-20,VP Sales,Client CFO sent formal contract termination notice citing breach. Account marked churned in CRM.,Terminated

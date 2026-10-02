@@ -1,0 +1,13 @@
+campaign_id,customer_id,campaign_name,sent_date,opened,clicked,unsubscribed
+CMP-401,CUST-1001,Q3 Feature Highlights,2026-08-01,0,0,0
+CMP-402,CUST-1001,Executive Product Webinar,2026-09-01,0,0,1
+CMP-401,CUST-1002,Q3 Feature Highlights,2026-08-01,1,0,0
+CMP-402,CUST-1002,Executive Product Webinar,2026-09-01,0,0,0
+CMP-401,CUST-1003,Q3 Feature Highlights,2026-08-01,1,0,0
+CMP-402,CUST-1003,Executive Product Webinar,2026-09-01,0,0,0
+CMP-401,CUST-1004,Q3 Feature Highlights,2026-08-01,0,0,0
+CMP-402,CUST-1004,Executive Product Webinar,2026-09-01,0,0,1
+CMP-401,CUST-1010,Q3 Feature Highlights,2026-08-01,1,1,0
+CMP-402,CUST-1010,Executive Product Webinar,2026-09-01,1,1,0
+CMP-401,CUST-1011,Q3 Feature Highlights,2026-08-01,1,1,0
+CMP-402,CUST-1011,Executive Product Webinar,2026-09-01,1,1,0
