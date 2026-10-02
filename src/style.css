@@ -1,0 +1,739 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #F7F7F3;
+  --bg-secondary: #F0F1EC;
+  --surface: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  --text-primary: #171A17;
+  --text-secondary: #5F655D;
+  --text-muted: #8A9086;
+  --border: #E2E5DE;
+  --border-strong: #D1D6CD;
+  --accent: #18A66A;
+  --accent-light: #C8F36A;
+  --accent-dark: #128653;
+  --success: #128653;
+  --warning: #A46A08;
+  --danger: #C55237;
+  --info: #5F655D;
+  --decision-bg: var(--bg-primary);
+  --decision-deep: var(--bg-secondary);
+  --decision-card: var(--surface);
+  --decision-elevated: var(--surface-elevated);
+  --decision-text: var(--text-primary);
+  --decision-secondary: var(--text-secondary);
+  --decision-muted: var(--text-muted);
+  --decision-border: var(--border);
+  --decision-accent: var(--accent);
+  --decision-accent-strong: var(--accent-light);
+  --decision-amber: var(--warning);
+  --decision-success: var(--success);
+  --decision-error: var(--danger);
+  --decision-info: var(--info);
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--decision-bg);
+  color: var(--decision-text);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-family: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+}
+
+::selection {
+  background: rgb(24 166 106 / 20%);
+  color: var(--decision-text);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--decision-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--decision-border);
+  border: 2px solid var(--decision-deep);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--decision-muted);
+}
+
+input:not([type="range"]),
+select,
+textarea {
+  color: var(--decision-text);
+  background-color: var(--decision-deep);
+  border-color: var(--decision-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--decision-muted);
+}
+
+input[type="range"] {
+  accent-color: var(--decision-accent);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--decision-accent);
+  outline-offset: 2px;
+}
+
+html,
+body,
+#root {
+  background-color: #0B0C0B;
+  color: #F2EFE7;
+}
+
+.decisionos-app-shell {
+  background-color: #0B0C0B;
+  color: #F2EFE7;
+}
+
+.decisionos-app-shell [class~="bg-dark-950"],
+.decisionos-app-shell [class*="bg-dark-950/"],
+.decisionos-app-shell [class~="bg-slate-950"],
+.decisionos-app-shell [class*="bg-slate-950/"] {
+  background-color: #0B0C0B;
+}
+
+.decisionos-app-shell [class~="bg-dark-925"],
+.decisionos-app-shell [class*="bg-dark-925/"],
+.decisionos-app-shell [class~="bg-dark-800"],
+.decisionos-app-shell [class*="bg-dark-800/"],
+.decisionos-app-shell [class~="bg-slate-900"],
+.decisionos-app-shell [class*="bg-slate-900/"] {
+  background-color: #111310;
+}
+
+.decisionos-app-shell [class~="bg-dark-900"],
+.decisionos-app-shell [class*="bg-dark-900/"],
+.decisionos-app-shell [class~="bg-slate-800"],
+.decisionos-app-shell [class*="bg-slate-800/"] {
+  background-color: #171915;
+}
+
+.decisionos-app-shell [class~="bg-dark-850"],
+.decisionos-app-shell [class*="bg-dark-850/"],
+.decisionos-app-shell [class~="bg-dark-750"],
+.decisionos-app-shell [class*="bg-dark-750/"],
+.decisionos-app-shell [class~="bg-slate-700"],
+.decisionos-app-shell [class*="bg-slate-700/"] {
+  background-color: #1D201B;
+}
+
+.decisionos-app-shell [class~="text-white"],
+.decisionos-app-shell [class~="text-slate-50"],
+.decisionos-app-shell [class~="text-slate-100"] {
+  color: #F2EFE7;
+}
+
+.decisionos-app-shell [class~="text-slate-200"],
+.decisionos-app-shell [class~="text-slate-300"],
+.decisionos-app-shell [class~="text-slate-400"] {
+  color: #B8B5AA;
+}
+
+.decisionos-app-shell [class~="text-slate-500"],
+.decisionos-app-shell [class~="text-slate-600"] {
+  color: #85857C;
+}
+
+.decisionos-app-shell [class~="border-slate-800"],
+.decisionos-app-shell [class*="border-slate-800/"],
+.decisionos-app-shell [class~="divide-slate-800"] {
+  border-color: #2A2C26;
+}
+
+.decisionos-app-shell [class~="border-slate-700"],
+.decisionos-app-shell [class~="border-dark-700"] {
+  border-color: #3A3B32;
+}
+
+.decisionos-app-shell [class~="text-gold-200"],
+.decisionos-app-shell [class~="text-gold-300"] {
+  color: #D8BC7A;
+}
+
+.decisionos-app-shell [class~="text-gold-400"],
+.decisionos-app-shell [class~="text-gold-500"] {
+  color: #C6A15B;
+}
+
+.decisionos-app-shell [class~="text-gold-600"],
+.decisionos-app-shell [class~="text-gold-700"] {
+  color: #94743B;
+}
+
+.decisionos-app-shell [class~="bg-gold-500"] {
+  background-color: #C6A15B;
+}
+
+.decisionos-app-shell [class~="bg-gold-400"] {
+  background-color: #D8BC7A;
+}
+
+.decisionos-app-shell [class~="border-gold-500"],
+.decisionos-app-shell [class~="border-gold-400"],
+.decisionos-app-shell [class*="border-gold-500/"],
+.decisionos-app-shell [class*="border-gold-400/"] {
+  border-color: #C6A15B;
+}
+
+.decisionos-app-shell [class~="border-gold-700"],
+.decisionos-app-shell [class~="border-gold-800"],
+.decisionos-app-shell [class~="border-gold-900"],
+.decisionos-app-shell [class*="border-gold-700/"],
+.decisionos-app-shell [class*="border-gold-800/"],
+.decisionos-app-shell [class*="border-gold-900/"] {
+  border-color: #94743B;
+}
+
+.decisionos-app-shell [class*="text-emerald-"],
+.decisionos-app-shell [class*="text-green-"] {
+  color: #7FA67B;
+}
+
+.decisionos-app-shell [class~="bg-emerald-950"],
+.decisionos-app-shell [class*="bg-emerald-950/"],
+.decisionos-app-shell [class~="bg-green-950"] {
+  background-color: #1D291E;
+}
+
+.decisionos-app-shell [class*="border-emerald-"],
+.decisionos-app-shell [class*="border-green-"] {
+  border-color: #567354;
+}
+
+.decisionos-app-shell [class*="text-amber-"] {
+  color: #C49A5A;
+}
+
+.decisionos-app-shell [class~="bg-amber-950"],
+.decisionos-app-shell [class*="bg-amber-950/"] {
+  background-color: #29231A;
+}
+
+.decisionos-app-shell [class*="border-amber-"] {
+  border-color: #816136;
+}
+
+.decisionos-app-shell [class*="text-rose-"],
+.decisionos-app-shell [class*="text-red-"] {
+  color: #B86B68;
+}
+
+.decisionos-app-shell [class~="bg-rose-950"],
+.decisionos-app-shell [class*="bg-rose-950/"] {
+  background-color: #2E201F;
+}
+
+.decisionos-app-shell [class*="border-rose-"],
+.decisionos-app-shell [class*="border-red-"] {
+  border-color: #824744;
+}
+
+.decisionos-app-shell [class*="bg-gold-950"] {
+  background-color: rgb(198 161 91 / 7%);
+}
+
+.decisionos-app-shell button[class~="bg-gold-500"] {
+  color: #0B0C0B;
+}
+
+.decisionos-app-shell .decisionos-topbar {
+  background-color: #111310;
+  border-color: #2A2C26;
+}
+
+.decisionos-app-shell .decisionos-brand-mark {
+  color: #0B0C0B;
+  background-color: #C6A15B;
+}
+
+.decisionos-app-shell .decisionos-nav-active {
+  color: #F2EFE7;
+  background-color: #1D201B;
+  border-color: #94743B;
+  box-shadow: inset 2px 0 #C6A15B;
+}
+
+.decisionos-app-shell .decisionos-nav-inactive {
+  color: #B8B5AA;
+  background-color: transparent;
+}
+
+.decisionos-app-shell .decisionos-nav-inactive:hover {
+  color: #F2EFE7;
+  background-color: #171915;
+}
+
+.decisionos-app-shell .decisionos-primary-button {
+  color: #0B0C0B;
+  background-color: #C6A15B;
+  border-color: #94743B;
+  box-shadow: none;
+}
+
+.decisionos-app-shell .decisionos-primary-button:hover:not(:disabled) {
+  background-color: #D8BC7A;
+}
+
+.decisionos-app-shell .decisionos-secondary-button {
+  color: #F2EFE7;
+  background-color: #171915;
+  border-color: #3A3B32;
+}
+
+.decisionos-app-shell .decisionos-secondary-button:hover:not(:disabled) {
+  background-color: #1D201B;
+  border-color: #94743B;
+}
+
+.decisionos-app-shell .decisionos-surface {
+  color: #F2EFE7;
+  background-color: #171915;
+  border-color: #2A2C26;
+}
+
+.decisionos-app-shell .decisionos-elevated-surface {
+  background-color: #1D201B;
+  border-color: #2A2C26;
+}
+
+.decisionos-app-shell .decisionos-dataset-active {
+  background-color: rgb(198 161 91 / 7%);
+  border-color: #C6A15B;
+}
+
+.decisionos-app-shell .decisionos-table-row:hover {
+  background-color: #1D201B;
+}
+
+.decisionos-app-shell .decisionos-result-positive {
+  color: #C0D0B8;
+  background-color: #1D291E;
+  border-color: #567354;
+}
+
+.decisionos-app-shell .decisionos-result-negative {
+  color: #D5A19A;
+  background-color: #2E201F;
+  border-color: #824744;
+}
+
+.decisionos-app-shell .decisionos-result-neutral {
+  color: #A9A79D;
+  background-color: #171915;
+  border-color: #3A3B32;
+}
+
+.decisionos-app-shell .decisionos-badge-verified {
+  color: #7FA67B;
+  background-color: #1D291E;
+  border-color: #567354;
+}
+
+.decisionos-app-shell .decisionos-badge-review {
+  color: #C49A5A;
+  background-color: #29231A;
+  border-color: #816136;
+}
+
+.decisionos-app-shell .decisionos-badge-conflict {
+  color: #B86B68;
+  background-color: #2E201F;
+  border-color: #824744;
+}
+
+.decisionos-app-shell .decisionos-badge-neutral {
+  color: #A9A79D;
+  background-color: #171915;
+  border-color: #3A3B32;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root,
+.decisionos-app-shell {
+  min-height: 100vh;
+  background-color: #F7F7F3;
+  color: #171A17;
+}
+
+.decisionos-app-shell {
+  font-family: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+  --decision-shadow: 0 1px 2px rgb(23 26 23 / 4%), 0 8px 24px rgb(23 26 23 / 4%);
+}
+
+.decisionos-app-shell .font-mono {
+  font-family: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.decisionos-app-shell [class*="tracking-"] {
+  letter-spacing: 0;
+}
+
+.decisionos-app-shell [class~="bg-dark-950"],
+.decisionos-app-shell [class*="bg-dark-950/"],
+.decisionos-app-shell [class~="bg-slate-950"],
+.decisionos-app-shell [class*="bg-slate-950/"] {
+  background-color: #F7F7F3;
+}
+
+.decisionos-app-shell [class~="bg-dark-925"],
+.decisionos-app-shell [class*="bg-dark-925/"],
+.decisionos-app-shell [class~="bg-dark-850"],
+.decisionos-app-shell [class*="bg-dark-850/"],
+.decisionos-app-shell [class~="bg-dark-800"],
+.decisionos-app-shell [class*="bg-dark-800/"],
+.decisionos-app-shell [class~="bg-dark-750"],
+.decisionos-app-shell [class*="bg-dark-750/"],
+.decisionos-app-shell [class~="bg-slate-900"],
+.decisionos-app-shell [class*="bg-slate-900/"] {
+  background-color: #F0F1EC;
+}
+
+.decisionos-app-shell [class~="bg-dark-900"],
+.decisionos-app-shell [class*="bg-dark-900/"],
+.decisionos-app-shell [class~="bg-slate-800"],
+.decisionos-app-shell [class*="bg-slate-800/"] {
+  background-color: #FFFFFF;
+}
+
+.decisionos-app-shell [class~="text-white"],
+.decisionos-app-shell [class~="text-slate-50"],
+.decisionos-app-shell [class~="text-slate-100"],
+.decisionos-app-shell [class~="text-slate-200"] {
+  color: #171A17;
+}
+
+.decisionos-app-shell [class~="text-slate-300"],
+.decisionos-app-shell [class~="text-slate-400"] {
+  color: #5F655D;
+}
+
+.decisionos-app-shell [class~="text-slate-500"],
+.decisionos-app-shell [class~="text-slate-600"] {
+  color: #8A9086;
+}
+
+.decisionos-app-shell [class~="border-slate-800"],
+.decisionos-app-shell [class*="border-slate-800/"],
+.decisionos-app-shell [class~="divide-slate-800"],
+.decisionos-app-shell [class*="divide-slate-800/"] {
+  border-color: #E2E5DE;
+}
+
+.decisionos-app-shell [class~="border-slate-700"],
+.decisionos-app-shell [class~="border-dark-700"] {
+  border-color: #D1D6CD;
+}
+
+.decisionos-app-shell [class~="text-gold-200"],
+.decisionos-app-shell [class~="text-gold-300"],
+.decisionos-app-shell [class~="text-gold-400"],
+.decisionos-app-shell [class~="text-gold-500"] {
+  color: #128653;
+}
+
+.decisionos-app-shell [class~="text-gold-600"],
+.decisionos-app-shell [class~="text-gold-700"] {
+  color: #128653;
+}
+
+.decisionos-app-shell [class~="bg-gold-500"] {
+  background-color: #18A66A;
+}
+
+.decisionos-app-shell [class~="bg-gold-400"] {
+  background-color: #C8F36A;
+}
+
+.decisionos-app-shell [class~="border-gold-500"],
+.decisionos-app-shell [class~="border-gold-400"],
+.decisionos-app-shell [class*="border-gold-500/"],
+.decisionos-app-shell [class*="border-gold-400/"] {
+  border-color: #18A66A;
+}
+
+.decisionos-app-shell [class~="border-gold-700"],
+.decisionos-app-shell [class~="border-gold-800"],
+.decisionos-app-shell [class~="border-gold-900"],
+.decisionos-app-shell [class*="border-gold-700/"],
+.decisionos-app-shell [class*="border-gold-800/"],
+.decisionos-app-shell [class*="border-gold-900/"] {
+  border-color: #B9E4CD;
+}
+
+.decisionos-app-shell [class*="text-emerald-"] ,
+.decisionos-app-shell [class*="text-green-"] {
+  color: #128653;
+}
+
+.decisionos-app-shell [class~="bg-emerald-950"],
+.decisionos-app-shell [class*="bg-emerald-950/"],
+.decisionos-app-shell [class~="bg-green-950"] {
+  background-color: #E8F7EF;
+}
+
+.decisionos-app-shell [class*="border-emerald-"],
+.decisionos-app-shell [class*="border-green-"] {
+  border-color: #B9E4CD;
+}
+
+.decisionos-app-shell [class*="text-amber-"] {
+  color: #A46A08;
+}
+
+.decisionos-app-shell [class~="bg-amber-950"],
+.decisionos-app-shell [class*="bg-amber-950/"] {
+  background-color: #FFF4D8;
+}
+
+.decisionos-app-shell [class*="border-amber-"] {
+  border-color: #F0D89F;
+}
+
+.decisionos-app-shell [class*="text-rose-"],
+.decisionos-app-shell [class*="text-red-"] {
+  color: #C55237;
+}
+
+.decisionos-app-shell [class~="bg-rose-950"],
+.decisionos-app-shell [class*="bg-rose-950/"],
+.decisionos-app-shell [class~="bg-red-950"] {
+  background-color: #FDE9E4;
+}
+
+.decisionos-app-shell [class*="border-rose-"],
+.decisionos-app-shell [class*="border-red-"] {
+  border-color: #F0C0B4;
+}
+
+.decisionos-app-shell .decisionos-topbar {
+  background-color: rgb(255 255 255 / 94%);
+  border-color: #E2E5DE;
+  box-shadow: 0 1px 3px rgb(23 26 23 / 4%);
+  backdrop-filter: blur(16px);
+}
+
+.decisionos-app-shell .decisionos-brand-mark {
+  color: #FFFFFF;
+  background-color: #18A66A;
+  box-shadow: 0 4px 10px rgb(24 166 106 / 18%);
+}
+
+.decisionos-app-shell .decisionos-nav-active {
+  color: #128653;
+  background-color: #E8F7EF;
+  border-color: #B9E4CD;
+  box-shadow: none;
+}
+
+.decisionos-app-shell .decisionos-nav-inactive {
+  color: #5F655D;
+  background-color: transparent;
+}
+
+.decisionos-app-shell .decisionos-nav-inactive:hover {
+  color: #171A17;
+  background-color: #F0F1EC;
+}
+
+.decisionos-app-shell .decisionos-primary-button {
+  color: #FFFFFF;
+  background-color: #18A66A;
+  border-color: #18A66A;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(18 134 83 / 12%);
+}
+
+.decisionos-app-shell .decisionos-primary-button:hover:not(:disabled) {
+  color: #FFFFFF;
+  background-color: #128653;
+  border-color: #128653;
+  transform: translateY(-1px);
+}
+
+.decisionos-app-shell .decisionos-action-review {
+  color: #8B5A08;
+  background-color: #FFF4D8;
+  border-color: #F0D89F;
+}
+
+.decisionos-app-shell .decisionos-action-review:hover:not(:disabled) {
+  background-color: #FCECC4;
+  border-color: #E7C66F;
+}
+
+.decisionos-app-shell .decisionos-action-danger {
+  color: #B74730;
+  background-color: #FDE9E4;
+  border-color: #F0C0B4;
+}
+
+.decisionos-app-shell .decisionos-action-danger:hover:not(:disabled) {
+  background-color: #F9D9D0;
+  border-color: #E9A895;
+}
+
+.decisionos-app-shell .decisionos-secondary-button {
+  color: #171A17;
+  background-color: #FFFFFF;
+  border-color: #D1D6CD;
+  border-radius: 8px;
+}
+
+.decisionos-app-shell .decisionos-secondary-button:hover:not(:disabled) {
+  background-color: #F0F1EC;
+  border-color: #AEB6AA;
+}
+
+.decisionos-app-shell .decisionos-surface,
+.decisionos-app-shell .decisionos-elevated-surface {
+  color: #171A17;
+  background-color: #FFFFFF;
+  border-color: #E2E5DE;
+  border-radius: 12px;
+  box-shadow: var(--decision-shadow);
+}
+
+.decisionos-app-shell .decisionos-dataset-active {
+  background-color: #E8F7EF;
+  border-color: #18A66A;
+  box-shadow: inset 0 0 0 1px #18A66A;
+}
+
+.decisionos-app-shell .decisionos-table-row:hover {
+  background-color: #F7F7F3;
+}
+
+.decisionos-app-shell .decisionos-result-positive,
+.decisionos-app-shell .decisionos-badge-verified {
+  color: #128653;
+  background-color: #E8F7EF;
+  border-color: #B9E4CD;
+}
+
+.decisionos-app-shell .decisionos-result-negative,
+.decisionos-app-shell .decisionos-badge-conflict {
+  color: #C55237;
+  background-color: #FDE9E4;
+  border-color: #F0C0B4;
+}
+
+.decisionos-app-shell .decisionos-result-neutral,
+.decisionos-app-shell .decisionos-badge-neutral {
+  color: #5F655D;
+  background-color: #F0F1EC;
+  border-color: #E2E5DE;
+}
+
+.decisionos-app-shell .decisionos-badge-review {
+  color: #8B5A08;
+  background-color: #FFF4D8;
+  border-color: #F0D89F;
+}
+
+.decisionos-app-shell button,
+.decisionos-app-shell a,
+.decisionos-app-shell summary {
+  transition-duration: 160ms;
+}
+
+.decisionos-app-shell .rounded-2xl {
+  border-radius: 12px;
+}
+
+.decisionos-app-shell input:not([type="range"]),
+.decisionos-app-shell select,
+.decisionos-app-shell textarea {
+  color: #171A17;
+  background-color: #FFFFFF;
+  border-color: #D1D6CD;
+  border-radius: 8px;
+}
+
+.decisionos-app-shell input::placeholder,
+.decisionos-app-shell textarea::placeholder {
+  color: #8A9086;
+}
+
+.decisionos-app-shell table th {
+  color: #5F655D;
+  background-color: #F0F1EC;
+}
+
+.decisionos-app-shell footer {
+  background-color: #F0F1EC;
+  border-color: #E2E5DE;
+}
+
+@media (max-width: 640px) {
+  .decisionos-app-shell main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .decisionos-app-shell table {
+    font-size: 11px;
+  }
+}
+
+.decisionos-app-shell .decisionos-call-trigger {
+  color: #FFFFFF;
+  background-color: #128653;
+  border-color: #128653;
+}
+
+.decisionos-app-shell .decisionos-call-trigger:hover:not(:disabled) {
+  color: #FFFFFF;
+  background-color: #0F7046;
+  border-color: #0F7046;
+  transform: translateY(-1px);
+}
+
+.decisionos-app-shell .decisionos-call-trigger-open {
+  color: #128653;
+  background-color: #E8F7EF;
+  border-color: #18A66A;
+}
+
+.decisionos-app-shell .decisionos-call-trigger-open:hover:not(:disabled) {
+  color: #128653;
+  background-color: #DDF2E6;
+  border-color: #18A66A;
+}
